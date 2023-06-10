@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(53, 52, 63);
+    background-color: rgb(218, 229, 238);
+}
+
+.header {
+    margin: 20px 0 40px 0;
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+#colourPicker {
+    cursor: pointer;    
+    width: 100px;
+    height: 100px;
+    border-style: none;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    width: 250px;
+    color: rgb(53, 52, 63);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(53, 52, 63);
+    border-radius: 10px;
+}
+
+button:hover,
+#colourPicker:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease;
+}
+
+.buttonSelected {
+    color: rgb(255, 255, 255);
+    background-color: rgba(53, 52, 63);
+    border: 2px solid rgb(53, 52, 63);
+}
+
+.slider {
+    cursor: pointer;
+    height: 50px;
+}
+
+.gridContainer {
+    cursor: pointer;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 20px 1px rgb(187, 199, 206);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-item {
+    cursor: pointer;
+    flex: 1;
+    aspect-ratio: 1/1;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#gh-logo {
+    height: 25px;
+    margin: 0 10px 0 0;
+    padding: 5px 0 0 0;;
+    width: auto;
+}
